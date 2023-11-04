@@ -1,6 +1,6 @@
 import React from 'react';
 import "./FooterStyles.css";
-import {FaFacebook, FaHome,FaLinkedin,FaMailBulk,FaPhone, FaTwitter} from "react-icons/fa";
+import { FaGithub, FaHome,FaLinkedin,FaMailBulk,FaPhone, FaTwitter} from "react-icons/fa";
 import {Link} from "react-router-dom";
 
 const Footer = () => {
@@ -42,8 +42,8 @@ const Footer = () => {
             of Express.js and MongoDB.
           </p>
           <div className="social">
-            <Link><FaFacebook size={30} style={{ color: "#fff", marginRight: "1rem" }} /></Link>
             <Link><FaTwitter size={30} style={{ color: "#fff", marginRight: "1rem" }} /></Link>
+            <Link><FaGithub size={30} style={{ color: "#fff", marginRight: "1rem" }} /></Link>
             <Link><FaLinkedin size={30} style={{ color: "#fff", marginRight: "1rem" }} /></Link>
           </div>
         </div>

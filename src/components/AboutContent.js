@@ -23,7 +23,7 @@ const AboutContent = () => {
           <div className="img-stack top">
             <img src={React1} alt="true" className="img" />
           </div>
-          <div className="img-stack top">
+          <div className="img-stack bottom">
             <img src={React2} alt="true" className="img" />
           </div>
         </div>
