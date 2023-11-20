@@ -5,17 +5,17 @@ import pro3 from "../assets/portfolio5.jpeg";
 const ProjectCardData = [
   {
     imgsrc: pro1,
-    title: "Netflix Clone",
+    title: "Movie Website",
     content:
-      "Introducing our innovative streaming platform, a remarkable Netflix clone that promises an unparalleled entertainment experience. With a user-friendly interface, seamless navigation, and a vast library of diverse content, including movies, TV shows, trending, action movies, documentaries, our clone brings the thrill of binge-watching to your fingertips.",
-    view: "https://gursimran123.github.io/NetflixClone.github.io/",
+      "Introducing our innovative streaming platform, a remarkable movie website that promises an unparalleled entertainment experience. With a user-friendly interface, seamless navigation, and a vast library of diverse content, including movies, shows etc and you can also search for the details of different movies and shows. It is made with e help of the Redux Toolkit.",
+    view: "https://movie-search-cyan-xi.vercel.app/",
   },
   {
     imgsrc: pro2,
     title: "Portfolio Website",
     content:
       "Elevate your online presence with my meticulously crafted portfolio website, built using React. Seamlessly blending captivating design with smooth interactivity, my portfolio showcases my skills, projects, and achievements in a dynamic and engaging manner. Explore a user-friendly showcase that reflects both my expertise and a passion for innovation.",
-    view: "https://gursimran123.github.io/NetflixClone.github.io/",
+    view: "https://my-portfolio-alpha-neon.vercel.app/",
     source: "https://github.com/Gursimran123/MyPortfolio",
   },
   {
