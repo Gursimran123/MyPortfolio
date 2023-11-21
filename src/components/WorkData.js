@@ -8,7 +8,8 @@ const ProjectCardData = [
     title: "Movie Website",
     content:
       "Introducing our innovative streaming platform, a remarkable movie website that promises an unparalleled entertainment experience. With a user-friendly interface, seamless navigation, and a vast library of diverse content, including movies, shows etc and you can also search for the details of different movies and shows. It is made with e help of the Redux Toolkit.",
-    view: "https://movie-search-cyan-xi.vercel.app/",
+    view: "https://my-movie-ruby.vercel.app/",
+    source: "https://github.com/Gursimran123/Redux-Movie",
   },
   {
     imgsrc: pro2,
@@ -23,7 +24,7 @@ const ProjectCardData = [
     title: "Food Ordering Website",
     content:
       "Savor the convenience of modern dining with our Food Ordering App, skillfully developed using the MERN stack. Experience a seamless fusion of mouthwatering choices and intuitive functionality, allowing you to browse a diverse menu, place orders effortlessly, and indulge in a contactless culinary journey. Elevate your dining experience today with our app.",
-    view: "https://gursimran123.github.io/NetflixClone.github.io/",
+    view: "https://github.com/Gursimran123/GoFood",
     source: "https://github.com/Gursimran123/GoFood",
   },
 ];
