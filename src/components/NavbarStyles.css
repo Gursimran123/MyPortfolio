@@ -9,6 +9,11 @@
     z-index: 10;
 }
 
+h1{
+    font-size: 28px;
+    font-weight: bold;
+}
+
 .header-bg{
     background-color: rgba(0,0,0,1);
     transition: 0.5s;
@@ -61,5 +66,8 @@ li.activate a{
     }
     .hamburger{
         display: block;
+    }
+    h1{
+        font-size: 24px;
     }
 }
