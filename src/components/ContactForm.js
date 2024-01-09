@@ -1,33 +1,10 @@
 import "./ContactFormStyles.css";
-import React,{useRef} from 'react'
-import emailjs from "@emailjs/browser";
-
+import React from 'react'
 
 const ContactForm = () => {
-  const form = useRef();
-   const sendEmail = (e) => {
-     e.preventDefault();
-
-     emailjs
-       .sendForm(
-         "service_h9s9417",
-         "template_m6vxjnu",
-         form.current,
-         "3FkucObAFBL_fSWHJ"
-       )
-       .then(
-         (result) => {
-           console.log(result.text);
-         },
-         (error) => {
-           console.log(error.text);
-         }
-       );
-   };
-
   return (
     <div className="form">
-      <form ref={form} onSubmit={sendEmail}>
+      <form>
         <label>Your Name</label>
         <input type="text" placeholder="Enter your name" name="from_name" />
         <label>Email</label>
