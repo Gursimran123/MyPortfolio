@@ -1,13 +1,29 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import "./FooterStyles.css";
 import { FaGithub, FaHome,FaLinkedin,FaMailBulk,FaPhone, FaTwitter} from "react-icons/fa";
 import {Link} from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { selectScrollVisibleFooter, setScrollVisibleFooter } from "../redux/slice/scrollSlice";
 import { Element } from "react-scroll";
 
 const Footer = () => {
+  const dispatch = useDispatch();
+  const isVisible = useSelector(selectScrollVisibleFooter);
+
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY;
+    dispatch(setScrollVisibleFooter(scrollPosition > 800));
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [dispatch]);
   return (
     <Element name="footer">
-      <div className="footer">
+      <div className={`footer ${isVisible ? "visible" : ""}`}>
         <div className="footer-container">
           <div className="left">
             <div className="location">

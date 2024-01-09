@@ -40,7 +40,7 @@ useEffect(() => {
          <img className=" intro-img" src={IntroImg} alt="introImg" />
        </div>
        <div className="content">
-         <p>Hi, I'm a Frontend Developer.</p>
+         <p>Hi, I'm Gursimran Singh.</p>
          <h1>{text}</h1>
          <div>
            <Link to="/project" className="btn">

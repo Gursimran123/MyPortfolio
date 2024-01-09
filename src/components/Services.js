@@ -1,12 +1,28 @@
 import "./ServicesStyles.css";
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Link } from "react-router-dom";
 import { Element } from "react-scroll";
+import { useDispatch, useSelector } from "react-redux";
+import { setScrollVisibleServices, selectScrollVisibleServices } from "../redux/slice/scrollSlice";
 
 const Services = () => {
+  const dispatch = useDispatch();
+  const isVisible = useSelector(selectScrollVisibleServices);
+
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY;
+    dispatch(setScrollVisibleServices(scrollPosition > 150));
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [dispatch]);
   return (
     <Element name="services">
-      <div className="services">
+      <div className={`services ${isVisible ? "visible" : ""}`}>
         <h2>Skills</h2>
         <div className="card-container">
           <div className="card">
