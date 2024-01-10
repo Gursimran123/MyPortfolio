@@ -12,7 +12,7 @@ const Footer = () => {
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
-    dispatch(setScrollVisibleFooter(scrollPosition > 800));
+    dispatch(setScrollVisibleFooter(scrollPosition > 850));
   };
 
   useEffect(() => {

@@ -3,12 +3,23 @@ label{
     margin-bottom: 0.5rem;
 }
 
+.form{
+     opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
 form{
     display: flex;
     flex-direction: column;
     padding: 4rem 1rem;
     margin: auto;
     max-width: 600px;
+}
+
+.form.visible{
+ opacity: 1;
+  transform: translateY(0);
 }
 
 form input, form textarea{

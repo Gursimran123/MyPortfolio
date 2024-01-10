@@ -2,14 +2,14 @@
     width: 100%;
     padding: 5rem 1rem;
     background-color: #000;
-     opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s, transform 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
 }
 
 .services.visible{
-     opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .services h2{

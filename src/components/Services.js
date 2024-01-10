@@ -11,7 +11,7 @@ const Services = () => {
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
-    dispatch(setScrollVisibleServices(scrollPosition > 150));
+    dispatch(setScrollVisibleServices(scrollPosition > 200));  
   };
 
   useEffect(() => {
